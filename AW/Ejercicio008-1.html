@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<body>
+    <form method="get">
+        <h1>Cuestionario de informacion</h1>
+        <p>Por favor, rellene el siguiente cuestionario:</p>
+        <h2>Datos personales</h2>
+        <p>Nombre: <input type="text"></p>  
+        <p>Edad: <input type="radio" name="1">menos de 20<input type="radio" name="1">de 21 a 30 <input type="radio" name="1">de 31 a 40 <input type="radio" name="1">mas de 40</p>
+        <label for="prof">Profesion:</label><input list="profe" name="prof" id="prof">
+        <datalist id="profe">
+            <option value="Maestro"></option>
+            <option value="Pescador"></option>
+            <option value="Cocinero"></option>
+        </datalist>
+        <h2>Datos de la vivienda</h2>
+        <p>Numero de dormitorios: <input type="radio" name="2">1 <input type="radio" name="2">2 <input type="radio" name="2">3<input type="radio" name="2">4 <input type="radio" name="2">5</p>
+        <label for="vivie">Tipo de vivienda</label><input list="vivie" name="vivi" id="vivi">
+        <datalist id="vivie">
+            <option value="Piso"></option>
+            <option value="Casa"></option>
+        </datalist>
+        <p>Precio:<input type="number">€</p>
+        <p>Zona<select name="zona" size="4">
+            <option value="1">Centro</option>
+            <option value="2">Nervion</option>
+            <option value="3">Triana</option>
+            <option value="4">Macarena</option>
+        </select></p>
+        <p>Extras (marque todos los que desee) <input type="checkbox">Piscina<input type="checkbox">Jardin<input type="checkbox">Garaje<input type="checkbox">Sauna</p>
+        <input type="submit"><input type="reset">
+    </form>
+</body>
+</html>
