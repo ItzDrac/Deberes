@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota=prompt("Ingrese la nota del examen");
+        if (nota >= 5) {
+            document.write("Ha aprobado");
+        }
+        else {
+            document.write("Ha suspendido");
+        };
+        document.write("<br>");
+        document.write("<br>");
+        var nombre=prompt("Ingrese su nombre");
+        var edad=prompt("Ingrese su edad");
+        if (edad >= 18) {
+            document.write(nombre," es mayor de edad")
+        }
+        else {
+            document.write(nombre," es menor de edad")
+        };
+        document.write("<br>");
+        document.write("<br>");
+        var nota1=prompt("Ingrese su primera nota");
+        var nota2=prompt("Ingrese su segunda nota");
+        var nota3=prompt("Ingrese su tercera nota");
+        prom = parseInt(nota1) + parseInt(nota2) + parseInt(nota3);
+        final = parseInt(prom) / (3);
+        if (final >= 7) {
+            document.write("Promocionado")
+        }
+        else {
+            document.write("No Promocionado")
+        };
+        document.write("<br>");
+        document.write("<br>");
+        var contra1=prompt("Ingrese su contraseña")
+        var contra2=prompt("Vuelva a ingresar su contraseña")
+        if ( contra1 == contra2) {
+            document.write("Correctas")
+        }
+        else {
+            document.write("Incorrecto")
+        }
+    </script>
+</body>
+</html>
