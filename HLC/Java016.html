@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numes = prompt("Introduzca el numero del mes.");
+
+        if (numes == 1 || numes == 3 || numes == 5 || numes == 7 || numes == 8 ||numes == 10 || numes == 12) {
+            document.write("Tiene 31 dias.");
+        } else {
+            if (numes == 4 || numes == 6 || numes == 9 || numes == 11) {
+                document.write("Tiene 30 dias.");
+        } else {
+            if (numes == 2) {
+                document.write("Tiene 28 dias.");
+        } else {
+                document.write("Numero del mes invalido.");
+                };
+            };
+        };
+    </script>
+</body>
+</html>

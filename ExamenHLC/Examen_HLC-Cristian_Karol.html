@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen HLC - Cristian Karol</title>
+</head>
+<body>
+    <script>
+        var nombre = prompt("Introduzca su nombre:");                                       //Pide el nombre.
+        var apelli = prompt("Introduzca sus apellidos:");                                   //Pide los apellidos.
+        var sueldo = prompt("Introduzca su sueldo:");                                       //Pide el sueldo.
+        var antigu = prompt("Introduzca los años de antigüedad:");                          //Pide los años de antigüedad.
+
+        document.write("Empleado: ",nombre+" "+apelli+"<br>");                              //Imprime el nombre y los apellidos juntos.
+        document.write("Antigüedad: ",antigu+" "+"años","<br>");                            //Imprime los años de antigüedad.
+        document.write("Sueldo Actual: ",sueldo+" "+"€","<br>");                            //Imprime el sueldo actual.
+        
+        if (sueldo < 1000 && antigu >= 10) {                                                //Si el sueldo es menor que 1000€ y la antigüedad es mayor o igual que 10 años se realiza lo siguiente:
+            document.write("Le corresponde un aumento del 20%.","<br>","<br>");             //Imprime el aumento correspondiente.
+            var nuevosueldo = sueldo * 1.2                                                  //Calcula el nuevo sueldo.
+            document.write("Nuevo Sueldo: ",parseInt(nuevosueldo)+" "+"€");                 //Imprime el nuevo sueldo.
+        }
+        else {
+            if (sueldo < 1000 && antigu < 5) {                                              //Si el sueldo es menor que 1000€ y la antigüedad es menor que 5 años se realiza lo siguiente:
+                document.write("Le corresponde un aumento del 10%.","<br>","<br>");         //Imprime el aumento correspondiente.
+                var nuevosueldo = sueldo * 1.1                                              //Calcula el nuevo sueldo.
+                document.write("Nuevo Sueldo: ",parseInt(nuevosueldo)+" "+"€");             //Imprime el nuevo sueldo.
+            }
+            else {
+                if (sueldo >= 2000 || antigu > 12 && antigu < 15) {                         //Si el sueldo es mayor o igual que 2000€ o la antigüedad es mayor que 12 años y menor que 15 años se realiza lo siguiente:
+                    document.write("Le corresponde un aumento del 2%.","<br>","<br>");      //Imprime el aumento correspondiente.
+                    var nuevosueldo = sueldo * 1.02                                         //Calcula el nuevo sueldo.
+                    document.write("Nuevo Sueldo: ",parseInt(nuevosueldo)+" "+"€");         //Imprime el nuevo sueldo.
+                }
+                else {                                                                      //Si no se cumple ningun "if" se realiza lo siguiente:
+                    document.write("No le corresponde ningun aumento");                     //Imprime por pantalla que no le corresponde ningun aumento.
+                }
+            }
+        }
+    </script>
+</body>
+</html>

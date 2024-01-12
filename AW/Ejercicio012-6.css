@@ -1,0 +1,12 @@
+td {
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(2) {
+    background-color: lawngreen;
+}
+
+tr:nth-child(6) {
+    background-color: darkred;
+}

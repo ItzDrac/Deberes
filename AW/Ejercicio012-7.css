@@ -1,0 +1,15 @@
+a {
+    font-size: 15px;
+    border: 1px dotted orange;
+}
+
+.img1 {
+    font-size: 10px;
+    font-style: italic;
+    border: 1px dashed darkred;
+}
+
+.img2 {
+    font-size: 11px;
+    border: 1px dotted green;
+}

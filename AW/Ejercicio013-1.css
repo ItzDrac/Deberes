@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Black Ops One";
+    src: url(fonts/BOO.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SeaShore";
+    src: url(fonts/SEA.ttf) format("truetype");
+}
+
+p {
+    font-family: "Black Ops One";
+    font-size: 2em;
+}
+
+span {
+    font-family: "SeaShore";
+    font-size: 2em;
+}

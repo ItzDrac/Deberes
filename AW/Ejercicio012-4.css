@@ -1,0 +1,32 @@
+title {
+    font-family: Verdana;
+    font-size: 40px;
+    color: darkgray;
+}
+
+body {
+    font-family: Verdana;
+    font-size: 10px;
+    color: black;
+    background-color: gray;
+}
+
+.orange {
+    background-color: blue;
+    color: orange;
+}
+
+.console {
+    background-color: black;
+    color: green;
+    font-family: Courier;
+}
+
+.important {
+    text-decoration: none;
+}
+
+.important:hover {
+    background-color: yellow;
+    text-decoration: none;
+}

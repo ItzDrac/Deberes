@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("Por favor elija el topping deseado: <br><br>");
+      document.write("a. Sin topping 1.90€ <br>");
+      document.write("b. Topping Oreo 1€ <br>");
+      document.write("c. Topping KitKat 1.50€ <br>");
+      document.write("d. Topping brownie 0.75€ <br>");
+      document.write("e. Topping lacasitos 0.95€ <br>");
+    </script>
+    <script>
+      var elec = prompt("Elija el topping");
+      document.write("<br>")
+      if (elec == "a" || elec == "sin topping" || elec == "nada") {
+        document.write("La seleccion es Sin topping. <br>");
+        document.write("Sera 1.90€.");
+      } else {
+        if (elec == "b" || elec == "oreo" || elec == "Oreo") {
+          document.write("La seleccion es Oreo. <br>");
+          document.write("Sera 2.90€.");
+        } else {
+          if (elec == "c" || elec == "kitkat" || elec == "KitKat") {
+            document.write("La seleccion es KitKat. <br>");
+            document.write("Sera 3.40€.");
+          } else {
+            if (elec == "d" || elec == "brownie") {
+              document.write("La seleccion es brownie. <br>");
+              document.write("Sera 2.65€.");
+            } else {
+              if (elec == "e" || elec == "lacasitos") {
+                document.write("La seleccion es lacasitos. <br>");
+                document.write("Sera 2.85€.");
+              } else {
+                document.write("No tenemos ese topping, lo siento.<br>");
+                document.write("Sera 1.90€.");
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

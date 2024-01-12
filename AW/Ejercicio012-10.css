@@ -1,0 +1,39 @@
+#verde {
+    background-color: lightgreen;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+    padding-left: 1cm;
+    padding-right: 10cm;
+}
+
+.link {
+    color: blue;
+}
+
+#sms {
+    margin-left: -1cm;
+    list-style-type: none;
+}
+
+#sem {
+    border: 1px solid black;
+    background-color: gray;
+    margin-right: 47cm;
+}
+
+#sen {
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    display: inline;
+}
+
+#sen:hover {
+    color: black;
+    background-color: white;
+}
+
+#verdeos {
+    background-color: darkgreen;
+    padding-left: 45%;
+}
